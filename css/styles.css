@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    ;
+}
+
+header {
+    background-image: url(../images/programacion.jpg);
+    background-attachment: fixed;
+    background-color: rgb(33, 37, 41);
+    padding: 1rem;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    align-items: center;
+    margin: 10px
+}
+
+/* Header*/
+
+
+
+
+
+header ul {
+    display: flex;
+    gap: 30px;
+    font-family: "Inter",
+        sans-serif
+}
+
+
+.joel-circulo {
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    background-size: cover;
+
+
+}
+
+header h1 {
+    font-family: 'Times New Roman', Times, serif;
+    border-color: black 20px;
+}
+
+
+.fondo-compu {
+    display: inline-block;
+    margin: 15px;
+    padding: 0.5rem 1rem;
+    border: 2px solid black;
+    background-color: none;
+    border-radius: 20px;
+
+
+
+
+}
+
+.fondo-computadora {
+    display: inline-block;
+    margin: 15px;
+    padding: 0.5rem 1rem;
+    border: 2px solid black;
+    background-color: #212529;
+    border-radius: 20px;
+
+
+
+
+}
+
+
+
+
+.portada {
+    resize: both;
+    overflow: auto;
+    height: 700px;
+    background-color: #212529;
+    background-image: url(../images/programacion.jpg);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-color: black;
+    background-repeat: no-repeat;
+
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+
+
+}
+
+footer {
+    background-image: url(../images/programacion.jpg);
+    background-attachment: fixed;
+    background-color: #212529;
+    padding: 1rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 10px;
+}
+
+p{
+    color: gray;
+}
+
+.equipo {
+display: flex;
+flex-direction:row ;
+flex-wrap: nowrap ;
+justify-content: space-evenly;
+
+;
+}
+
+
+
+.box-model {
+    margin: 5% 5% 5% 5%;
+    text-align: justify;
+    font-family:'Times New Roman', Times, 'Times New Roman', Times, serif ;
+  
+}
+
+
+
+
+
+
+.footer-equipo {
+    align-items: center;
+    padding: 0.5rem;
+    gap: 10%;
+
+}
+
+
+
+/*
+    min-width---> A partir de una resolución
+    max-width---> Hasta una resolución
+    
+    orientation:portrait | landscape
+    */
