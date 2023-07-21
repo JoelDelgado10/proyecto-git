@@ -12,8 +12,22 @@ ol {
 
 a {
     text-decoration: none;
-    color: white;
-    ;
+    color: rgb(255, 255, 255);
+
+}
+
+h2 {
+    text-align: center;
+    margin: 3px;
+    padding: 1rem;
+
+
+}
+
+h3 {
+    text-align: center;
+    padding: 1rem;
+    margin: 20px;
 }
 
 header {
@@ -23,10 +37,13 @@ header {
     padding: 1rem;
     color: white;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     gap: 50px;
     align-items: center;
-    margin: 10px
+    margin: 10px;
+    z-index: 2;
+
 }
 
 /* Header*/
@@ -52,10 +69,21 @@ header ul {
 
 }
 
+.avatar-circulo {
+    width: 150px;
+    border-radius: 80%;
+    display: flex;
+    background-size: cover;
+
+
+}
+
 header h1 {
     font-family: 'Times New Roman', Times, serif;
     border-color: black 20px;
 }
+
+
 
 
 .fondo-compu {
@@ -64,7 +92,7 @@ header h1 {
     padding: 0.5rem 1rem;
     border: 2px solid black;
     background-color: none;
-    border-radius: 20px;
+
 
 
 
@@ -86,7 +114,6 @@ header h1 {
 
 
 
-
 .portada {
     resize: both;
     overflow: auto;
@@ -104,11 +131,35 @@ header h1 {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-
-
-
-
 }
+
+
+.membresias {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    gap: 10px
+}
+
+
+
+.portada-opacity {
+
+    background-image: url(./../images/fondobackgroundimg.jpg);
+    background-repeat: no-repeat;
+
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+
+
 
 footer {
     background-image: url(../images/programacion.jpg);
@@ -120,28 +171,108 @@ footer {
     justify-content: center;
     gap: 50px;
     margin: 10px;
+    flex-wrap: wrap;
 }
 
-p{
-    color: gray;
+p {
+
+    color: rgb(97, 97, 97);
+
 }
+
+.inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    gap: 20px;
+
+}
+
+.inicu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    gap: 20px;
+
+}
+
+.ini {
+    margin: 20px;
+}
+
+
+
+.joel-circuloo {
+    display: flex;
+    padding: 1rem;
+    align-self: center;
+    width: 150px;
+    border-radius: 50%;
+    background-size: cover;
+
+}
+
+
+
+
+.joel-asociados {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+
+}
+
+label {
+    display: none;
+}
+
+.porque-elegir {
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+
+    align-content: space-around;
+    gap: 100px;
+
+    flex-wrap: wrap;
+    margin: 40px 15px 40px;
+
+
+
+
+}
+
+
 
 .equipo {
-display: flex;
-flex-direction:row ;
-flex-wrap: nowrap ;
-justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
 
-;
+    ;
 }
 
 
 
 .box-model {
-    margin: 5% 5% 5% 5%;
+    margin: 5%;
+
     text-align: justify;
-    font-family:'Times New Roman', Times, 'Times New Roman', Times, serif ;
-  
+    font-family: 'Times New Roman', Times, 'Times New Roman', Times, serif;
+    padding: 1rem
 }
 
 
@@ -150,13 +281,102 @@ justify-content: space-evenly;
 
 
 .footer-equipo {
+    display: flex;
     align-items: center;
+    flex-wrap: nowrap;
     padding: 0.5rem;
     gap: 10%;
 
 }
 
+/*seccion quienes somos*/
+.Joeldegado-quees {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 
+    margin: 20px;
+    gap: 10px;
+    padding: 3rem;
+
+
+}
+
+.doblep {
+    display: flex;
+    width: 600px;
+    height: 100px;
+
+
+}
+
+.video-somos {
+    display: flex;
+    padding: 1rem;
+    margin-top: 70px;
+
+
+    height: 420px;
+    width: 420px;
+}
+
+
+.parrafo-somos {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 1.5rem;
+}
+
+/*membresias*/
+
+
+.tarjeta {
+    border: 2px solid rgb(114, 113, 113);
+    margin: 10px;
+    padding-bottom: 10px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    width: 230px;
+
+
+}
+
+.colora {
+    color: #212529;
+    display: inline-block;
+    flex-grow: 1;
+    padding: 0.5rem 1rem;
+    border: 2px solid black;
+
+}
+
+.colore {
+    border-bottom: 2px #212529 solid;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    margin-top: 20px;
+
+
+}
+
+.coloru {
+    color: aliceblue;
+    display: inline-block;
+    flex-grow: 1;
+    padding: 0.5rem 1rem;
+    border: 2px solid black;
+
+}
 
 /*
     min-width---> A partir de una resolución
@@ -164,3 +384,5 @@ justify-content: space-evenly;
     
     orientation:portrait | landscape
     */
+
+    
