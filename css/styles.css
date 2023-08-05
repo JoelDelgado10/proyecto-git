@@ -5,29 +5,61 @@
 }
 
 
+
+
+
 ul,
 ol {
     list-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    
 }
 
 a {
     text-decoration: none;
     color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+
 
 }
 
+
+img {
+    max-width: 100%;
+}
+
+
 h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
     text-align: center;
     margin: 3px;
     padding: 1rem;
 
-
 }
 
+
+
+
+
 h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     text-align: center;
     padding: 1rem;
     margin: 20px;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+h5 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 header {
@@ -41,22 +73,31 @@ header {
     justify-content: space-around;
     gap: 50px;
     align-items: center;
-    margin: 10px;
+    margin: 4px;
     z-index: 2;
 
 }
 
+img {
+    max-width: 100%;
+}
+
+
 /* Header*/
 
 
-
+input:focus {
+    border: 2px solid white;
+    
+}
 
 
 header ul {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
-    font-family: "Inter",
-        sans-serif
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 
@@ -65,6 +106,8 @@ header ul {
     border-radius: 50%;
     display: flex;
     background-size: cover;
+    padding: 1rem;
+    object-fit: cover;
 
 
 }
@@ -76,14 +119,19 @@ header ul {
     background-size: cover;
 
 
+
 }
 
 header h1 {
-    font-family: 'Times New Roman', Times, serif;
     border-color: black 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+
 }
 
-
+:root{
+    --color-principal: orange;
+}
 
 
 .fondo-compu {
@@ -93,10 +141,11 @@ header h1 {
     border: 2px solid black;
     background-color: none;
 
+}
 
-
-
-
+.fondo-compu:hover {
+    background-color: white;
+    color: white;
 }
 
 .fondo-computadora {
@@ -107,6 +156,11 @@ header h1 {
     background-color: #212529;
     border-radius: 20px;
 
+}
+
+.fondo-computadora:hover {
+    background-color: #212529;
+    
 
 
 
@@ -162,22 +216,78 @@ header h1 {
 
 
 footer {
+
     background-image: url(../images/programacion.jpg);
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
     background-color: #212529;
     padding: 1rem;
     color: white;
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin: 10px;
-    flex-wrap: wrap;
+    margin: 4px;
+    text-align: center;
+
+
+
+
+
+
+
+
 }
+
+
+footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
+
+}
+
+footer ul li {
+    margin-bottom: 0.2rem;
+    text-align: center;
+    gap: 2rem;
+
+}
+
+@media (min-width: 1200px) {
+    .footer-contact {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+}
+
+@media (min-width: 768px) {
+    .footer-contact {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 576px) {
+    .footer-contact {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+
 
 p {
 
     color: rgb(97, 97, 97);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
 
+    
 }
 
 .inicio {
@@ -235,19 +345,24 @@ label {
     display: none;
 }
 
-.porque-elegir {
-    text-align: center;
-    padding: 1rem;
+.porque {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
     justify-content: center;
+    gap: 1rem;
+    margin: 50px;
 
-    align-content: space-around;
-    gap: 100px;
+}
 
-    flex-wrap: wrap;
-    margin: 40px 15px 40px;
+.porque-elegir {
+    display: grid;
+
+    margin-bottom: 50px;
+    text-align: center;
+    gap: 50px;
+
+
+
+
 
 
 
@@ -268,7 +383,7 @@ label {
 
 
 .box-model {
-    margin: 5%;
+    margin: 2%;
 
     text-align: justify;
     font-family: 'Times New Roman', Times, 'Times New Roman', Times, serif;
@@ -280,14 +395,7 @@ label {
 
 
 
-.footer-equipo {
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    padding: 0.5rem;
-    gap: 10%;
 
-}
 
 /*seccion quienes somos*/
 .Joeldegado-quees {
@@ -298,10 +406,17 @@ label {
     flex-wrap: wrap;
 
     margin: 20px;
-    gap: 10px;
+    gap: 1rem;
     padding: 3rem;
+    width: 100%;
+    height: 100%;
 
 
+}
+
+.texto-joeldelgado {
+    gap: 1rem;
+    margin-top: 100px;
 }
 
 .doblep {
@@ -314,13 +429,18 @@ label {
 
 .video-somos {
     display: flex;
+    max-width: 100%;
     padding: 1rem;
-    margin-top: 70px;
+    margin-top: 120px;
 
 
     height: 420px;
     width: 420px;
+
 }
+
+
+
 
 
 .parrafo-somos {
@@ -329,6 +449,7 @@ label {
     justify-content: center;
     margin: 10px;
     padding: 1.5rem;
+
 }
 
 /*membresias*/
@@ -385,4 +506,52 @@ label {
     orientation:portrait | landscape
     */
 
-    
+/* mediaqueri*/
+
+
+
+@media (min-width:576px) {
+    .porque-elegir {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 100px);
+    }
+
+    @media (min-width: 768px) {
+        .Joeldegado-quees {
+            display: flex;
+            width: 100%;
+            height: 100%;
+
+
+
+        }
+
+
+        @media (min-width:768px) {
+            .porque-elegir {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: repeat(4, 100px);
+            }
+
+            @media (min-width: 1200px) {
+                .texto-joeldelgado {
+                    margin-top: 140px;
+
+
+                }
+
+                @media (min-width:1200px) {
+                    .porque-elegir {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        grid-template-rows: repeat(4, 100px);
+                    }
+
+                    @media (min-width:1400px) {
+                        .porque-elegir {
+                            display: grid;
+                            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                            grid-template-rows: repeat(4, 100px);
+                        }
